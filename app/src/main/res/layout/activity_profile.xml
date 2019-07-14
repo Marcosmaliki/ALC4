@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_5"
+    tools:context=".Profile">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="My Profile"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_height="?actionBarSize"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/me"
+                    android:layout_marginTop="20dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/grey_5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Marcos Maliki"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_marginTop="25dp"
+                    android:text="Track:   Android"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="-20dp"
+                    android:background="@color/grey_10"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country:    Kenya"
+                    android:id="@+id/skill"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="-20dp"
+                    android:background="@color/grey_10"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:  marcoseznavil@gmail.com"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="-20dp"
+                    android:background="@color/grey_10"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number:  0715 243 602"
+                    android:padding="12dp"
+                    android:id="@+id/phone"
+                    android:drawableEnd="@drawable/ic_call_end"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="-20dp"
+                    android:background="@color/grey_10"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slack Username: Marcos Maliki"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>
